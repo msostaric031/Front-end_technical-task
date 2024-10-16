@@ -337,7 +337,8 @@ a {
 }
 
 .integrations-title {
-  font-size: 36px;
+  font-size: clamp(1.875rem, 1.75rem + 0.5556vw, 2.25rem);
+  line-height: clamp(2.375rem, 2.25rem + 0.5556vw, 2.75rem);
   font-weight: 600;
   line-height: 44px;
   color: #101828;
@@ -346,8 +347,8 @@ a {
 }
 
 .integrations-title-paragraph {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: clamp(1.125rem, 1.0833rem + 0.1852vw, 1.25rem);
+  line-height: clamp(1.875rem, 1.9167rem + -0.1852vw, 1.75rem);
   line-height: 30px;
   max-width: 768px;
   text-align: center;
@@ -499,5 +500,54 @@ a {
 
   .metrics-subtitle {
     color: #6941c6;
+  }
+}
+
+/* Main features */
+
+#main-features {
+  padding: 0 80px 96px;
+}
+
+.main-features-title-container {
+  margin-bottom: 64px;
+}
+
+.main-features-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.features-mockup-desktop {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.features-mockup-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #main-features {
+    padding: 0 40px 96px;
+  }
+}
+
+@media (max-width: 425px) {
+  .features-mockup-desktop {
+    display: none;
+  }
+  .features-mockup-mobile {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    right: -20px;
+  }
+
+  #main-features {
+    padding: 0 16px 96px;
   }
 }
