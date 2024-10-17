@@ -153,9 +153,16 @@ a {
     display: block;
     width: 32px;
     height: 3px;
-    background-color: black;
+    background-color: #344054;
     transition: all 0.3s ease;
     margin-bottom: 6px;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 18px 16px;
   }
 }
 
@@ -201,23 +208,19 @@ a {
 
 .hero-input-container {
   display: flex;
-  gap: 16px;
-  max-width: 500px;
-  width: 100%;
-  margin-bottom: 6px;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .hero-input-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: start;
   justify-content: center;
-  align-items: center;
+  gap: 16px;
 }
 
 .hero-input-wrapper p {
-  width: 100%;
-  max-width: 500px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -228,8 +231,7 @@ a {
   padding: 12px 14px;
   border-radius: 8px;
   border: none;
-  width: 100%;
-  max-width: 360px;
+  min-width: 360px;
 }
 
 .hero-btn {
@@ -240,6 +242,32 @@ a {
   font-weight: 400;
   line-height: 24px;
   border-radius: 8px;
+}
+
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-img {
+  margin-top: -100px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+}
+
+.hero-pattern-left {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+}
+
+.hero-pattern-right {
+  position: relative;
+  right: -20px;
+  bottom: -40px;
 }
 
 @media (max-width: 1024px) {
@@ -256,6 +284,23 @@ a {
   #hero {
     padding: 0;
   }
+  .hero-input-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+  .hero-input {
+    min-width: unset;
+  }
 }
 
 @media (max-width: 425px) {
@@ -265,6 +310,11 @@ a {
   }
   #hero {
     padding: 0;
+  }
+  .hero-img {
+    margin-top: -60px;
+    position: relative;
+    right: -20px;
   }
 }
 
@@ -503,6 +553,14 @@ a {
   }
 }
 
+@media (max-width: 500px) {
+  .metrics-content-container {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+}
+
 /* Main features */
 
 #main-features {
@@ -526,6 +584,10 @@ a {
 
 .features-mockup-mobile {
   display: none;
+}
+
+.main-features-container {
+  margin-top: 48px;
 }
 
 @media (max-width: 768px) {
