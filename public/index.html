@@ -29,7 +29,7 @@
         </nav>
       </div>
       <div class="auth-buttons">
-        <button class="login-btn">Log In</button>
+        <button class="login-btn login-btn-trigger">Log In</button>
         <button class="primary-btn">Sign Up</button>
       </div>
 
@@ -132,650 +132,741 @@
         </div>
         <div class="hamburger-btns">
           <button class="primary-btn">Sign up</button>
-          <button class="secondary-btn">Log in</button>
+          <button class="secondary-btn login-btn-trigger">Log in</button>
         </div>
       </div>
     </header>
 
-    <!-- Hero -->
-
-    <section id="hero">
-      <div class="hero-wrapper">
-        <h1 class="hero-title">Grow your users.</h1>
-        <h1 class="hero-title-secondary">Smarter.</h1>
-        <p class="hero-paragraph">
-          Powerful, self-serve product and growth analytics to help you convert,
-          engage, and retain more users. Trusted by over 4,000 startups.
-        </p>
-        <div class="hero-input-wrapper">
-          <form
-            class="hero-input-container"
-            action="your_form_handler_url"
-            method="post"
-          >
-            <input
-              type="email"
-              name="email-input"
-              class="hero-input"
-              placeholder="Enter your email"
-              required
-            />
-            <p>We care about your data in our <u>privacy policy</u>.</p>
-          </form>
-          <button type="submit" class="primary-btn hero-btn p-16">
-            Get started
-          </button>
-        </div>
+    <!-- Login -->
+    <section id="login">
+      <div class="login-left">
+        <form class="login-form" method="post">
+          <div class="login-icon-container">
+            <div class="logo">
+              <img
+                src="./assets/icons/header-icon.svg"
+                alt="icon"
+                class="header-icon"
+              />
+              Untitled UI
+            </div>
+          </div>
+          <div class="login-form-container">
+            <div class="login-form-title">
+              <h1 class="login-title">Log in</h1>
+              <p class="p-16">Welcome back! Please enter your details.</p>
+            </div>
+            <div class="login-form-inputs">
+              <label for="email" class="p-14">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                class="p-16"
+              />
+              <label for="password" class="p-14">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="••••••••"
+                class="p-16"
+              />
+            </div>
+            <div class="login-forgot-password">
+              <p class="p-14">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                  class="custom-checkbox"
+                />
+                Remember for 30 days
+              </p>
+              <p class="p-14">Forgot password</p>
+            </div>
+            <div class="login-form-buttons">
+              <div class="login-screen-btn-container">
+                <button class="primary-btn login-screen-btn">Sign in</button>
+                <button class="secondary-btn login-btn google-btn">
+                  <img src="./assets/icons/google-icon.svg" alt="google" /> Sign
+                  in with google
+                </button>
+              </div>
+            </div>
+            <div class="login-form-signUp">
+              <p>Don’t have an account? <span>Sign up</span></p>
+            </div>
+          </div>
+        </form>
       </div>
-
-      <div class="hero-image-container">
-        <img
-          src="./assets/images/line-pattern-left.svg"
-          alt=""
-          class="pattern-img pattern-left"
-        />
-
-        <img
-          src="./assets/images/hero-mockup.png"
-          alt=""
-          class="hero-image-desktop"
-        />
-        <img
-          src="./assets/images/hero-mockup-mobile.png"
-          alt=""
-          class="hero-image-mobile"
-        />
-        <img
-          src="./assets/images/line-pattern-right.svg"
-          alt=""
-          class="pattern-img pattern-right"
-        />
-      </div>
-    </section>
-
-    <!-- Features -->
-
-    <section id="features">
-      <div class="features-wrapper">
-        <div class="features-card">
-          <img
-            src="./assets/icons/mail.svg"
-            alt="email"
-            class="features-icon"
-          />
-          <p class="features-title">Share team inboxes</p>
-          <p class="features-paragraph">
-            Whether you have a team of 2 or 200, our shared team inboxes keep
-            everyone on the same page and in the loop.
-          </p>
-        </div>
-        <div class="features-card">
-          <img src="./assets/icons/zap.svg" alt="zap" class="features-icon" />
-          <p class="features-title">Deliver instant answers</p>
-          <p class="features-paragraph">
-            An all-in-one customer service platform that helps you balance
-            everything your customers need to be happy.
-          </p>
-        </div>
-        <div class="features-card">
-          <img
-            src="./assets/icons/bar-chart.svg"
-            alt="bar-chart"
-            class="features-icon"
-          />
-          <p class="features-title">Manage your team with reports</p>
-          <p class="features-paragraph">
-            Measure what matters with Untitled’s easy-to-use reports. You can
-            filter, export, and drilldown on the data in a couple clicks.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Integrations -->
-
-    <section id="integrations">
-      <div class="integrations-wrapper">
-        <div class="integrations-title-wrapper">
-          <p class="integrations-above-title">Integrations</p>
-          <h2 class="integrations-title">Get more value from your tools</h2>
-          <p class="integrations-title-paragraph">
-            Connect your tools, connect your teams. With over 100 apps already
-            available in our directory, your team’s favourite tools are just a
-            click away.
-          </p>
+      <div class="login-right">
+        <div class="login-right-img-container">
+          <img src="./assets/images/login-mockup.png" alt="hero-mockup" />
         </div>
 
-        <div class="integrations-content-wrapper">
-          <div class="integrations-card">
-            <img
-              src="./assets/icons/notion.svg"
-              alt="notion"
-              class="integrations-icon"
-            />
-            <div class="integrations-card-text-wrapper">
-              <p class="integrations-card-title">Deliver instant answers</p>
-              <p class="integrations-paragraph">
-                An all-in-one customer service platform that helps you balance
-                everything your customers need to be happy.
-              </p>
-            </div>
-            <p class="integrations-link">
-              View integration
-              <img src="./assets/icons/arrow-right.svg" alt="" />
+        <div class="login-right-content-container">
+          <div class="login-right-content-text">
+            <p class="login-right-content-text-title">
+              Welcome to your new dashboard
+            </p>
+            <p class="p-16 login-right-content-text-paragraph">
+              Sign in to explore changes we’ve made.
             </p>
           </div>
-          <div class="integrations-card">
-            <img
-              src="./assets/icons/slack.svg"
-              alt="slack"
-              class="integrations-icon"
-            />
-            <div class="integrations-card-text-wrapper">
-              <p class="integrations-card-title">Deliver instant answers</p>
-              <p class="integrations-paragraph">
-                An all-in-one customer service platform that helps you balance
-                everything your customers need to be happy.
-              </p>
+          <div class="login-right-carousel">
+            <img src="./assets/icons/chevron-left.svg" alt="left" />
+            <div class="login-right-carousel-dots">
+              <span></span>
+              <span></span>
+              <span class="active"></span>
+              <span></span>
             </div>
-            <p class="integrations-link">
-              View integration
-              <img src="./assets/icons/arrow-right.svg" alt="" />
-            </p>
-          </div>
-          <div class="integrations-card">
-            <img
-              src="./assets/icons/google_drive.svg"
-              alt="google_drive"
-              class="integrations-icon"
-            />
-            <div class="integrations-card-text-wrapper">
-              <p class="integrations-card-title">Deliver instant answers</p>
-              <p class="integrations-paragraph">
-                An all-in-one customer service platform that helps you balance
-                everything your customers need to be happy.
-              </p>
-            </div>
-            <p class="integrations-link">
-              View integration
-              <img src="./assets/icons/arrow-right.svg" alt="" />
-            </p>
-          </div>
-          <div class="integrations-card">
-            <img
-              src="./assets/icons/intercom.svg"
-              alt="intercom"
-              class="integrations-icon"
-            />
-            <div class="integrations-card-text-wrapper">
-              <p class="integrations-card-title">Deliver instant answers</p>
-              <p class="integrations-paragraph">
-                An all-in-one customer service platform that helps you balance
-                everything your customers need to be happy.
-              </p>
-            </div>
-            <p class="integrations-link">
-              View integration
-              <img src="./assets/icons/arrow-right.svg" alt="" />
-            </p>
-          </div>
-          <div class="integrations-card">
-            <img
-              src="./assets/icons/jira.svg"
-              alt="jira"
-              class="integrations-icon"
-            />
-            <div class="integrations-card-text-wrapper">
-              <p class="integrations-card-title">Deliver instant answers</p>
-              <p class="integrations-paragraph">
-                An all-in-one customer service platform that helps you balance
-                everything your customers need to be happy.
-              </p>
-            </div>
-            <p class="integrations-link">
-              View integration
-              <img src="./assets/icons/arrow-right.svg" alt="" />
-            </p>
-          </div>
-          <div class="integrations-card">
-            <img
-              src="./assets/icons/dropbox.svg"
-              alt="dropbox"
-              class="integrations-icon"
-            />
-            <div class="integrations-card-text-wrapper">
-              <p class="integrations-card-title">Deliver instant answers</p>
-              <p class="integrations-paragraph">
-                An all-in-one customer service platform that helps you balance
-                everything your customers need to be happy.
-              </p>
-            </div>
-            <p class="integrations-link">
-              View integration
-              <img src="./assets/icons/arrow-right.svg" alt="" />
-            </p>
+            <img src="./assets/icons/chevron-right.svg" alt="left" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Metrics -->
-
-    <section id="metrics">
-      <div class="metrics-wrapper">
-        <div class="metrics-title-wrapper">
-          <h2 class="metrics-title">Unleash the full power of data</h2>
-          <p class="metrics-subtitle">
-            Everything you need to convert, engage, and retain more users.
-          </p>
-        </div>
-        <div class="metrics-content-container">
-          <div class="metrics-item">
-            <p class="metrics-number">400+</p>
-            <p class="metrics-description">Projects completed</p>
-          </div>
-          <div class="metrics-item">
-            <p class="metrics-number">600%</p>
-            <p class="metrics-description">Return on investment</p>
-          </div>
-          <div class="metrics-item">
-            <p class="metrics-number">10k</p>
-            <p class="metrics-description">Global downloads</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Main features -->
-
-    <section id="main-features">
-      <div class="main-features-wrapper">
-        <div class="integrations-title-wrapper main-features-title-container">
-          <p class="integrations-above-title">Features</p>
-          <h2 class="integrations-title">
-            Cutting-edge features for advanced analytics
-          </h2>
-          <p class="integrations-title-paragraph">
+    <div class="body-wrapper">
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-wrapper">
+          <h1 class="hero-title">Grow your users.</h1>
+          <h1 class="hero-title-secondary">Smarter.</h1>
+          <p class="hero-paragraph">
             Powerful, self-serve product and growth analytics to help you
             convert, engage, and retain more users. Trusted by over 4,000
             startups.
           </p>
+          <div class="hero-input-wrapper">
+            <form class="hero-input-container" method="post">
+              <input
+                type="email"
+                name="email-input"
+                class="hero-input"
+                placeholder="Enter your email"
+                required
+              />
+              <p>We care about your data in our <u>privacy policy</u>.</p>
+            </form>
+            <button type="submit" class="primary-btn hero-btn p-16">
+              Get started
+            </button>
+          </div>
         </div>
 
-        <div class="main-features-image-container">
+        <div class="hero-image-container">
           <img
-            src="./assets/images/features_mockup.png"
-            alt="features-mockup-desktop"
-            class="features-mockup-desktop"
+            src="./assets/images/line-pattern-left.svg"
+            alt=""
+            class="pattern-img pattern-left"
+          />
+
+          <img
+            src="./assets/images/hero-mockup.png"
+            alt=""
+            class="hero-image-desktop"
           />
           <img
-            src="./assets/images/iPhone-12-Pro-mockup.png"
-            alt="features-mockup-mobile"
-            class="features-mockup-mobile"
+            src="./assets/images/hero-mockup-mobile.png"
+            alt=""
+            class="hero-image-mobile"
           />
-        </div>
-      </div>
-      <div class="features-wrapper">
-        <div class="features-card">
           <img
-            src="./assets/icons/mail.svg"
-            alt="email"
-            class="features-icon"
+            src="./assets/images/line-pattern-right.svg"
+            alt=""
+            class="pattern-img pattern-right"
           />
-          <p class="features-title">Share team inboxes</p>
-          <p class="features-paragraph">
-            Whether you have a team of 2 or 200, our shared team inboxes keep
-            everyone on the same page and in the loop.
-          </p>
         </div>
-        <div class="features-card">
-          <img src="./assets/icons/zap.svg" alt="zap" class="features-icon" />
-          <p class="features-title">Deliver instant answers</p>
-          <p class="features-paragraph">
-            An all-in-one customer service platform that helps you balance
-            everything your customers need to be happy.
-          </p>
-        </div>
-        <div class="features-card">
-          <img
-            src="./assets/icons/bar-chart.svg"
-            alt="bar-chart"
-            class="features-icon"
-          />
-          <p class="features-title">Manage your team with reports</p>
-          <p class="features-paragraph">
-            Measure what matters with Untitled’s easy-to-use reports. You can
-            filter, export, and drilldown on the data in a couple clicks.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Pricing -->
+      <!-- Features -->
 
-    <section id="pricing">
-      <div class="integrations-title-wrapper main-features-title-container">
-        <p class="integrations-above-title pricing-title">Pricing</p>
-        <h2 class="integrations-title">Plans that fit your scale</h2>
-        <p class="integrations-title-paragraph">
-          Simple, transparent pricing that grows with you. Try any plan free for
-          30 days.
-        </p>
-      </div>
-
-      <div class="pricing-content-container">
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <div class="pricing-card-header-title-wrapper">
-              <p class="pricing-card-title">Basic plan</p>
-              <p class="p-16">Our most popular plan for small teams.</p>
-            </div>
-            <div class="pricing-card-price-wrapper">
-              <p class="pricing-card-price"><span>$</span>10</p>
-              <p class="pricing-card-price-text">per month</p>
-            </div>
-          </div>
-
-          <div class="pricing-card-content-container">
-            <div class="pricing-card-content-title-container">
-              <p class="pricing-card-content-title p-16">Features</p>
-              <p class="pricing-card-content-description p-16">
-                Everything in our free plan plus....
-              </p>
-            </div>
-
-            <div class="pricing-card-list-container">
-              <ul class="pricing-content-list">
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Access to basic features</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Basic reporting + analytics</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Up to 10 individual users</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>20GB individual data</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Basic chat support</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Attend events</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Automatic updates</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Backup your account</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Audit log and notes</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p>Feature requests</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="pricing-card-btn-container">
-              <button class="primary-btn pricing-btn">Get started</button>
-            </div>
-          </div>
-        </div>
-        <div class="pricing-card">
-          <div class="pricing-card-header">
-            <div class="pricing-card-header-title-wrapper">
-              <p class="pricing-card-title">
-                Business plan
-                <span class="pricing-card-header-title-flag">popular</span>
-              </p>
-              <p class="p-16">Advanced features and reporting.</p>
-            </div>
-            <div class="pricing-card-price-wrapper">
-              <p class="pricing-card-price"><span>$</span>20</p>
-              <p class="pricing-card-price-text">per month</p>
-            </div>
-          </div>
-
-          <div class="pricing-card-content-container">
-            <div class="pricing-card-content-title-container">
-              <p class="pricing-card-content-title p-16">Features</p>
-              <p class="pricing-card-content-description">
-                Everything in our basic plan plus....
-              </p>
-            </div>
-
-            <div class="pricing-card-list-container">
-              <ul class="pricing-content-list">
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">200+ integrations</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Advanced reporting</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Up to 20 individual users</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">40GB individual data</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Priority chat support</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Advanced custom fields</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Audit log and data history</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Backup your account</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">Personalised service</p>
-                </li>
-                <li class="pricing-content-list-item">
-                  <img src="./assets/icons/check-icon.svg" alt="check icon" />
-                  <p class="p-16">+ many more...</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="pricing-card-btn-container">
-              <button class="primary-btn pricing-btn">Get started</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-
-    <section id="faq">
-      <div class="faq-wrapper">
-        <div class="integrations-title-wrapper main-features-title-container">
-          <h2 class="integrations-title">Frequently asked questions</h2>
-          <p class="integrations-title-paragraph">
-            Everything you need to know about the product and billing.
-          </p>
-        </div>
-
-        <div class="faq-content-container">
-          <div class="faq-item">
-            <p class="faq-title">Is there a free trial available?</p>
-            <img src="./assets/icons/plus-circle.svg" alt="plus" />
-          </div>
-          <div class="faq-item">
-            <p class="faq-title">Can I change my plan later?</p>
-            <img src="./assets/icons/plus-circle.svg" alt="plus" />
-          </div>
-          <div class="faq-item">
-            <p class="faq-title">What is your cancellation policy?</p>
-            <img src="./assets/icons/plus-circle.svg" alt="plus" />
-          </div>
-          <div class="faq-item">
-            <p class="faq-title">Can other info be added to an invoice?</p>
-            <img src="./assets/icons/plus-circle.svg" alt="plus" />
-          </div>
-          <div class="faq-item">
-            <p class="faq-title">How does billing work?</p>
-            <img src="./assets/icons/plus-circle.svg" alt="plus" />
-          </div>
-          <div class="faq-item">
-            <p class="faq-title">How do I change my account email?</p>
-            <img src="./assets/icons/plus-circle.svg" alt="plus" />
-          </div>
-        </div>
-
-        <div class="faq-footer-wrapper">
-          <div class="faq-footer-images">
-            <div class="faq-img faq-image-small first-person">
-              <img src="./assets/images/person1.png" alt="" />
-            </div>
-            <div class="faq-img faq-image-big">
-              <img src="./assets/images/person2.png" alt="" />
-            </div>
-            <div class="faq-img faq-image-small third-person">
-              <img src="./assets/images/person3.png" alt="" />
-            </div>
-          </div>
-          <div class="faq-footer-text-container">
-            <p class="faq-footer-title">Still have questions?</p>
-            <p class="faq-footer-paragraph">
-              Can’t find the answer you’re looking for? Please chat to our
-              friendly team.
+      <section id="features">
+        <div class="features-wrapper">
+          <div class="features-card">
+            <img
+              src="./assets/icons/mail.svg"
+              alt="email"
+              class="features-icon"
+            />
+            <p class="features-title">Share team inboxes</p>
+            <p class="features-paragraph">
+              Whether you have a team of 2 or 200, our shared team inboxes keep
+              everyone on the same page and in the loop.
             </p>
           </div>
-          <div class="faq-footer-btn">
-            <button class="primary-btn faq-btn p-16">Get in touch</button>
+          <div class="features-card">
+            <img src="./assets/icons/zap.svg" alt="zap" class="features-icon" />
+            <p class="features-title">Deliver instant answers</p>
+            <p class="features-paragraph">
+              An all-in-one customer service platform that helps you balance
+              everything your customers need to be happy.
+            </p>
+          </div>
+          <div class="features-card">
+            <img
+              src="./assets/icons/bar-chart.svg"
+              alt="bar-chart"
+              class="features-icon"
+            />
+            <p class="features-title">Manage your team with reports</p>
+            <p class="features-paragraph">
+              Measure what matters with Untitled’s easy-to-use reports. You can
+              filter, export, and drilldown on the data in a couple clicks.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA -->
+      <!-- Integrations -->
 
-    <section id="cta">
-      <div class="cta-wrapper">
-        <div class="cta-text-container">
-          <h2 class="h2-from-36-to-30 cta-title">Start your free trial</h2>
-          <p class="p-from-20-to-18 cta-paragraph">
-            Join over 4,000+ startups already growing with Untitled.
+      <section id="integrations">
+        <div class="integrations-wrapper">
+          <div class="integrations-title-wrapper">
+            <p class="integrations-above-title">Integrations</p>
+            <h2 class="integrations-title">Get more value from your tools</h2>
+            <p class="integrations-title-paragraph">
+              Connect your tools, connect your teams. With over 100 apps already
+              available in our directory, your team’s favourite tools are just a
+              click away.
+            </p>
+          </div>
+
+          <div class="integrations-content-wrapper">
+            <div class="integrations-card">
+              <img
+                src="./assets/icons/notion.svg"
+                alt="notion"
+                class="integrations-icon"
+              />
+              <div class="integrations-card-text-wrapper">
+                <p class="integrations-card-title">Deliver instant answers</p>
+                <p class="integrations-paragraph">
+                  An all-in-one customer service platform that helps you balance
+                  everything your customers need to be happy.
+                </p>
+              </div>
+              <p class="integrations-link">
+                View integration
+                <img src="./assets/icons/arrow-right.svg" alt="" />
+              </p>
+            </div>
+            <div class="integrations-card">
+              <img
+                src="./assets/icons/slack.svg"
+                alt="slack"
+                class="integrations-icon"
+              />
+              <div class="integrations-card-text-wrapper">
+                <p class="integrations-card-title">Deliver instant answers</p>
+                <p class="integrations-paragraph">
+                  An all-in-one customer service platform that helps you balance
+                  everything your customers need to be happy.
+                </p>
+              </div>
+              <p class="integrations-link">
+                View integration
+                <img src="./assets/icons/arrow-right.svg" alt="" />
+              </p>
+            </div>
+            <div class="integrations-card">
+              <img
+                src="./assets/icons/google_drive.svg"
+                alt="google_drive"
+                class="integrations-icon"
+              />
+              <div class="integrations-card-text-wrapper">
+                <p class="integrations-card-title">Deliver instant answers</p>
+                <p class="integrations-paragraph">
+                  An all-in-one customer service platform that helps you balance
+                  everything your customers need to be happy.
+                </p>
+              </div>
+              <p class="integrations-link">
+                View integration
+                <img src="./assets/icons/arrow-right.svg" alt="" />
+              </p>
+            </div>
+            <div class="integrations-card">
+              <img
+                src="./assets/icons/intercom.svg"
+                alt="intercom"
+                class="integrations-icon"
+              />
+              <div class="integrations-card-text-wrapper">
+                <p class="integrations-card-title">Deliver instant answers</p>
+                <p class="integrations-paragraph">
+                  An all-in-one customer service platform that helps you balance
+                  everything your customers need to be happy.
+                </p>
+              </div>
+              <p class="integrations-link">
+                View integration
+                <img src="./assets/icons/arrow-right.svg" alt="" />
+              </p>
+            </div>
+            <div class="integrations-card">
+              <img
+                src="./assets/icons/jira.svg"
+                alt="jira"
+                class="integrations-icon"
+              />
+              <div class="integrations-card-text-wrapper">
+                <p class="integrations-card-title">Deliver instant answers</p>
+                <p class="integrations-paragraph">
+                  An all-in-one customer service platform that helps you balance
+                  everything your customers need to be happy.
+                </p>
+              </div>
+              <p class="integrations-link">
+                View integration
+                <img src="./assets/icons/arrow-right.svg" alt="" />
+              </p>
+            </div>
+            <div class="integrations-card">
+              <img
+                src="./assets/icons/dropbox.svg"
+                alt="dropbox"
+                class="integrations-icon"
+              />
+              <div class="integrations-card-text-wrapper">
+                <p class="integrations-card-title">Deliver instant answers</p>
+                <p class="integrations-paragraph">
+                  An all-in-one customer service platform that helps you balance
+                  everything your customers need to be happy.
+                </p>
+              </div>
+              <p class="integrations-link">
+                View integration
+                <img src="./assets/icons/arrow-right.svg" alt="" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics -->
+
+      <section id="metrics">
+        <div class="metrics-wrapper">
+          <div class="metrics-title-wrapper">
+            <h2 class="metrics-title">Unleash the full power of data</h2>
+            <p class="metrics-subtitle">
+              Everything you need to convert, engage, and retain more users.
+            </p>
+          </div>
+          <div class="metrics-content-container">
+            <div class="metrics-item">
+              <p class="metrics-number">400+</p>
+              <p class="metrics-description">Projects completed</p>
+            </div>
+            <div class="metrics-item">
+              <p class="metrics-number">600%</p>
+              <p class="metrics-description">Return on investment</p>
+            </div>
+            <div class="metrics-item">
+              <p class="metrics-number">10k</p>
+              <p class="metrics-description">Global downloads</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main features -->
+
+      <section id="main-features">
+        <div class="main-features-wrapper">
+          <div class="integrations-title-wrapper main-features-title-container">
+            <p class="integrations-above-title">Features</p>
+            <h2 class="integrations-title">
+              Cutting-edge features for advanced analytics
+            </h2>
+            <p class="integrations-title-paragraph">
+              Powerful, self-serve product and growth analytics to help you
+              convert, engage, and retain more users. Trusted by over 4,000
+              startups.
+            </p>
+          </div>
+
+          <div class="main-features-image-container">
+            <img
+              src="./assets/images/features_mockup.png"
+              alt="features-mockup-desktop"
+              class="features-mockup-desktop"
+            />
+            <img
+              src="./assets/images/iPhone-12-Pro-mockup.png"
+              alt="features-mockup-mobile"
+              class="features-mockup-mobile"
+            />
+          </div>
+        </div>
+        <div class="features-wrapper">
+          <div class="features-card">
+            <img
+              src="./assets/icons/mail.svg"
+              alt="email"
+              class="features-icon"
+            />
+            <p class="features-title">Share team inboxes</p>
+            <p class="features-paragraph">
+              Whether you have a team of 2 or 200, our shared team inboxes keep
+              everyone on the same page and in the loop.
+            </p>
+          </div>
+          <div class="features-card">
+            <img src="./assets/icons/zap.svg" alt="zap" class="features-icon" />
+            <p class="features-title">Deliver instant answers</p>
+            <p class="features-paragraph">
+              An all-in-one customer service platform that helps you balance
+              everything your customers need to be happy.
+            </p>
+          </div>
+          <div class="features-card">
+            <img
+              src="./assets/icons/bar-chart.svg"
+              alt="bar-chart"
+              class="features-icon"
+            />
+            <p class="features-title">Manage your team with reports</p>
+            <p class="features-paragraph">
+              Measure what matters with Untitled’s easy-to-use reports. You can
+              filter, export, and drilldown on the data in a couple clicks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+
+      <section id="pricing">
+        <div class="integrations-title-wrapper main-features-title-container">
+          <p class="integrations-above-title pricing-title">Pricing</p>
+          <h2 class="integrations-title">Plans that fit your scale</h2>
+          <p class="integrations-title-paragraph">
+            Simple, transparent pricing that grows with you. Try any plan free
+            for 30 days.
           </p>
         </div>
-        <div class="cta-btn-container">
-          <button class="secondary-btn cta-btn">Learn more</button>
-          <button class="primary-btn cta-btn">Get started</button>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
+        <div class="pricing-content-container">
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="pricing-card-header-title-wrapper">
+                <p class="pricing-card-title">Basic plan</p>
+                <p class="p-16">Our most popular plan for small teams.</p>
+              </div>
+              <div class="pricing-card-price-wrapper">
+                <p class="pricing-card-price"><span>$</span>10</p>
+                <p class="pricing-card-price-text">per month</p>
+              </div>
+            </div>
 
-    <footer>
-      <div class="footer-wrapper">
-        <div class="footer-links">
-          <div class="footer-links-list-container">
-            <p class="footer-links-list-title">Product</p>
-            <ul class="footer-links-list">
-              <li class="p-16">Overview</li>
-              <li class="p-16">Features</li>
-              <li class="p-16">Solutions <span>New</span></li>
-              <li class="p-16">Tutorials</li>
-              <li class="p-16">Pricing</li>
-              <li class="p-16">Releases</li>
-            </ul>
+            <div class="pricing-card-content-container">
+              <div class="pricing-card-content-title-container">
+                <p class="pricing-card-content-title p-16">Features</p>
+                <p class="pricing-card-content-description p-16">
+                  Everything in our free plan plus....
+                </p>
+              </div>
+
+              <div class="pricing-card-list-container">
+                <ul class="pricing-content-list">
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Access to basic features</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Basic reporting + analytics</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Up to 10 individual users</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>20GB individual data</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Basic chat support</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Attend events</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Automatic updates</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Backup your account</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Audit log and notes</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p>Feature requests</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pricing-card-btn-container">
+                <button class="primary-btn pricing-btn">Get started</button>
+              </div>
+            </div>
           </div>
-          <div class="footer-links-list-container">
-            <p class="footer-links-list-title">Company</p>
-            <ul class="footer-links-list">
-              <li class="p-16">About us</li>
-              <li class="p-16">Careers</li>
-              <li class="p-16">Press</li>
-              <li class="p-16">News</li>
-              <li class="p-16">Media kit</li>
-              <li class="p-16">Contact</li>
-            </ul>
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <div class="pricing-card-header-title-wrapper">
+                <p class="pricing-card-title">
+                  Business plan
+                  <span class="pricing-card-header-title-flag">popular</span>
+                </p>
+                <p class="p-16">Advanced features and reporting.</p>
+              </div>
+              <div class="pricing-card-price-wrapper">
+                <p class="pricing-card-price"><span>$</span>20</p>
+                <p class="pricing-card-price-text">per month</p>
+              </div>
+            </div>
+
+            <div class="pricing-card-content-container">
+              <div class="pricing-card-content-title-container">
+                <p class="pricing-card-content-title p-16">Features</p>
+                <p class="pricing-card-content-description">
+                  Everything in our basic plan plus....
+                </p>
+              </div>
+
+              <div class="pricing-card-list-container">
+                <ul class="pricing-content-list">
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">200+ integrations</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Advanced reporting</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Up to 20 individual users</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">40GB individual data</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Priority chat support</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Advanced custom fields</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Audit log and data history</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Backup your account</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">Personalised service</p>
+                  </li>
+                  <li class="pricing-content-list-item">
+                    <img src="./assets/icons/check-icon.svg" alt="check icon" />
+                    <p class="p-16">+ many more...</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pricing-card-btn-container">
+                <button class="primary-btn pricing-btn">Get started</button>
+              </div>
+            </div>
           </div>
-          <div class="footer-links-list-container">
-            <p class="footer-links-list-title">Resources</p>
-            <ul class="footer-links-list">
-              <li class="p-16">Blog</li>
-              <li class="p-16">Newsletter</li>
-              <li class="p-16">Events</li>
-              <li class="p-16">Help centre</li>
-              <li class="p-16">Tutorials</li>
-              <li class="p-16">Support</li>
-            </ul>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <section id="faq">
+        <div class="faq-wrapper">
+          <div class="integrations-title-wrapper main-features-title-container">
+            <h2 class="integrations-title">Frequently asked questions</h2>
+            <p class="integrations-title-paragraph">
+              Everything you need to know about the product and billing.
+            </p>
           </div>
 
-          <div class="footer-links-list-container">
-            <p class="footer-links-list-title">Social</p>
-            <ul class="footer-links-list">
-              <li class="p-16">Twitter</li>
-              <li class="p-16">LinkedIn</li>
-              <li class="p-16">Facebook</li>
-              <li class="p-16">GitHub</li>
-              <li class="p-16">AngelList</li>
-              <li class="p-16">Dribbble</li>
-            </ul>
+          <div class="faq-content-container">
+            <div class="faq-item">
+              <p class="faq-title">Is there a free trial available?</p>
+              <img src="./assets/icons/plus-circle.svg" alt="plus" />
+            </div>
+            <div class="faq-item">
+              <p class="faq-title">Can I change my plan later?</p>
+              <img src="./assets/icons/plus-circle.svg" alt="plus" />
+            </div>
+            <div class="faq-item">
+              <p class="faq-title">What is your cancellation policy?</p>
+              <img src="./assets/icons/plus-circle.svg" alt="plus" />
+            </div>
+            <div class="faq-item">
+              <p class="faq-title">Can other info be added to an invoice?</p>
+              <img src="./assets/icons/plus-circle.svg" alt="plus" />
+            </div>
+            <div class="faq-item">
+              <p class="faq-title">How does billing work?</p>
+              <img src="./assets/icons/plus-circle.svg" alt="plus" />
+            </div>
+            <div class="faq-item">
+              <p class="faq-title">How do I change my account email?</p>
+              <img src="./assets/icons/plus-circle.svg" alt="plus" />
+            </div>
           </div>
-          <div class="footer-links-list-container">
-            <p class="footer-links-list-title">Legal</p>
-            <ul class="footer-links-list">
-              <li class="p-16">Terms</li>
-              <li class="p-16">Privacy</li>
-              <li class="p-16">Cookies</li>
-              <li class="p-16">Licenses</li>
-              <li class="p-16">Settings</li>
-              <li class="p-16">Contact</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-app-links-container">
-          <p>Get the app</p>
-          <div class="footer-app-links">
-            <img src="./assets/images/app-store.jpg" alt="" />
-            <img src="./assets/images/google-play.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="footer-end-container">
-        <div class="logo">
-          <img
-            src="./assets/icons/header-icon.svg"
-            alt="icon"
-            class="header-icon"
-          />
-          Untitled UI
-        </div>
 
-        <div class="footer-copyright">
-          <p>© 2077 Untitled UI. All rights reserved.</p>
+          <div class="faq-footer-wrapper">
+            <div class="faq-footer-images">
+              <div class="faq-img faq-image-small first-person">
+                <img src="./assets/images/person1.png" alt="" />
+              </div>
+              <div class="faq-img faq-image-big">
+                <img src="./assets/images/person2.png" alt="" />
+              </div>
+              <div class="faq-img faq-image-small third-person">
+                <img src="./assets/images/person3.png" alt="" />
+              </div>
+            </div>
+            <div class="faq-footer-text-container">
+              <p class="faq-footer-title">Still have questions?</p>
+              <p class="faq-footer-paragraph">
+                Can’t find the answer you’re looking for? Please chat to our
+                friendly team.
+              </p>
+            </div>
+            <div class="faq-footer-btn">
+              <button class="primary-btn faq-btn p-16">Get in touch</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </section>
+
+      <!-- CTA -->
+
+      <section id="cta">
+        <div class="cta-wrapper">
+          <div class="cta-text-container">
+            <h2 class="h2-from-36-to-30 cta-title">Start your free trial</h2>
+            <p class="p-from-20-to-18 cta-paragraph">
+              Join over 4,000+ startups already growing with Untitled.
+            </p>
+          </div>
+          <div class="cta-btn-container">
+            <button class="secondary-btn cta-btn">Learn more</button>
+            <button class="primary-btn cta-btn">Get started</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-links">
+            <div class="footer-links-list-container">
+              <p class="footer-links-list-title">Product</p>
+              <ul class="footer-links-list">
+                <li class="p-16">Overview</li>
+                <li class="p-16">Features</li>
+                <li class="p-16">Solutions <span>New</span></li>
+                <li class="p-16">Tutorials</li>
+                <li class="p-16">Pricing</li>
+                <li class="p-16">Releases</li>
+              </ul>
+            </div>
+            <div class="footer-links-list-container">
+              <p class="footer-links-list-title">Company</p>
+              <ul class="footer-links-list">
+                <li class="p-16">About us</li>
+                <li class="p-16">Careers</li>
+                <li class="p-16">Press</li>
+                <li class="p-16">News</li>
+                <li class="p-16">Media kit</li>
+                <li class="p-16">Contact</li>
+              </ul>
+            </div>
+            <div class="footer-links-list-container">
+              <p class="footer-links-list-title">Resources</p>
+              <ul class="footer-links-list">
+                <li class="p-16">Blog</li>
+                <li class="p-16">Newsletter</li>
+                <li class="p-16">Events</li>
+                <li class="p-16">Help centre</li>
+                <li class="p-16">Tutorials</li>
+                <li class="p-16">Support</li>
+              </ul>
+            </div>
+
+            <div class="footer-links-list-container">
+              <p class="footer-links-list-title">Social</p>
+              <ul class="footer-links-list">
+                <li class="p-16">Twitter</li>
+                <li class="p-16">LinkedIn</li>
+                <li class="p-16">Facebook</li>
+                <li class="p-16">GitHub</li>
+                <li class="p-16">AngelList</li>
+                <li class="p-16">Dribbble</li>
+              </ul>
+            </div>
+            <div class="footer-links-list-container">
+              <p class="footer-links-list-title">Legal</p>
+              <ul class="footer-links-list">
+                <li class="p-16">Terms</li>
+                <li class="p-16">Privacy</li>
+                <li class="p-16">Cookies</li>
+                <li class="p-16">Licenses</li>
+                <li class="p-16">Settings</li>
+                <li class="p-16">Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-app-links-container">
+            <p>Get the app</p>
+            <div class="footer-app-links">
+              <img src="./assets/images/app-store.jpg" alt="" />
+              <img src="./assets/images/google-play.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-end-container">
+          <div class="logo">
+            <img
+              src="./assets/icons/header-icon.svg"
+              alt="icon"
+              class="header-icon"
+            />
+            Untitled UI
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2077 Untitled UI. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
