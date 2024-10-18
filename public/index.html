@@ -8,6 +8,7 @@
   </head>
   <body>
     <!-- Header Section -->
+
     <header class="header">
       <div class="header-left">
         <div class="logo">
@@ -32,14 +33,12 @@
         <button class="primary-btn">Sign Up</button>
       </div>
 
-      <!-- Hamburger Menu Icon -->
       <div class="hamburger-menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <!-- Hamburger Menu Content (Initially Hidden) -->
       <div class="hamburger-menu-content" id="hamburgerMenu">
         <nav class="hamburger-nav">
           <a href="#">Home</a>
@@ -53,7 +52,7 @@
           /></a>
           <a href="#">Pricing</a>
         </nav>
-        <!-- Add more links as required -->
+
         <div class="footer-menu-links">
           <div class="footer-menu-links-left">
             <a href="#">About us</a>
@@ -86,17 +85,48 @@
           engage, and retain more users. Trusted by over 4,000 startups.
         </p>
         <div class="hero-input-wrapper">
-          <div class="hero-input-container">
+          <form
+            class="hero-input-container"
+            action="your_form_handler_url"
+            method="post"
+          >
             <input
               type="email"
               name="email-input"
               class="hero-input"
               placeholder="Enter your email"
+              required
             />
             <p>We care about your data in our <u>privacy policy</u>.</p>
-          </div>
-          <button class="primary-btn hero-btn">Get started</button>
+          </form>
+          <button type="submit" class="primary-btn hero-btn">
+            Get started
+          </button>
         </div>
+      </div>
+
+      <div class="hero-image-container">
+        <img
+          src="./assets/images/line-pattern-left.svg"
+          alt=""
+          class="pattern-img pattern-left"
+        />
+
+        <img
+          src="./assets/images/hero-mockup.png"
+          alt=""
+          class="hero-image-desktop"
+        />
+        <img
+          src="./assets/images/hero-mockup-mobile.png"
+          alt=""
+          class="hero-image-mobile"
+        />
+        <img
+          src="./assets/images/line-pattern-right.svg"
+          alt=""
+          class="pattern-img pattern-right"
+        />
       </div>
     </section>
 
